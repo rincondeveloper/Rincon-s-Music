@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+
+    /* scrollbar-color: #ff0000 #000000; */
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+hr {
+    margin-top: .5em;
+    height: .2em;
+    background-color: #000;
+    margin-bottom: 3em;
+}
+
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2em 0;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.header__logo {
+    display: flex;
+    align-items: baseline;
+}
+.logo__a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* .nav__header {} */
+.nav__header ul { 
+    list-style: none; 
+}
+.nav__header li { 
+    display: inline; 
+    padding: 0 0 0 4em;
+}
+.nav__header a {
+    text-decoration: none; 
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: transparent; 
+    text-underline-offset: .2em;
+
+    transition: all 0.5s ease-in-out;
+}
+.nav__header a:hover {
+    /* text-decoration: underline; */
+    text-underline-offset: .5em;
+    text-decoration-color: #000; 
+}
+
+
+
+
+
+
+/* HERO */
+/* HERO */
+/* HERO */
+.hero {
+    background-image: url('/index/main-img/tomyorke.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-color: rgb(240, 240, 240);
+    height: 92vh;
+    width: 100%;
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20em 0;
+    margin-bottom: 10em;
+}
+.hero__h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    padding-right: 4.5em;
+
+    margin-bottom: 5em;
+}
+.hero span {
+    color: aliceblue;
+    transition: all 1s ease;
+}
+.hero span:hover {
+    color: var(--hover-color);
+}
+.hero span2 {
+    color: aliceblue;
+    transition: all 1s ease;
+}
+.hero spanL:hover {
+    color: var(--hover-color);
+}
+.flecha {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 7em;
+
+    margin-left: 87em;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+
+}
+.hero i {
+    font-size: 5em;
+    color: rgb(240, 240, 240);
+    transition: all 1s ease;
+}
+.flecha:hover i{
+    color: var(--hover-color)
+}
+
+
+
+
+
+/* ALBUMS */
+/* ALBUMS */
+/* ALBUMS */
+.albums {
+    display: flex;
+    flex-direction: column;
+
+    height: 90%;
+    padding: 3em 0;
+    margin-bottom: 5em;
+}
+
+.albums__head {
+    display: flex;
+    flex-direction: column;
+}
+.albums__head-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+
+
+
+.albums__albums {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 1.7em;
+    width: 100%;
+
+    /* animation: slide 25s infinite; */
+    /* padding-left: .65em; */
+    /* overflow: hidden; */
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: left;
+
+    transform: translateX(0);
+}
+
+
+
+.image {
+    overflow: hidden; 
+    border-radius: .6em; 
+    /* background-color: #845151; */
+    height: 30em;
+    width: 30em;
+}
+
+.image img {
+    /* display: block; */
+    height: 100%;
+    width: 30em;
+    border-radius: .6;
+
+    transition: all 1s ease;
+
+    /* transition: transform 1s ease-out; */
+}
+
+.image:hover img {
+    transform: scale(1.2);
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+
+
+.item p, .item h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: .3em;
+}
+.item a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: .3em;
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+.item a:hover {
+    text-decoration: underline;
+    text-underline-offset: .3em;
+}
+
+
+
+.item__datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nameAlbum {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.nameBand {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nameReview {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: right;
+}
+.nameReview .nameReviewA {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.nameReview .nameReviewA:hover {
+    text-decoration: none;
+    word-spacing: .2em;
+    color: var(--hover-color);
+}
+
+.nameYear {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+
+
+
+
+/* LIKE */
+/* LIKE */
+/* LIKE */
+
+.like {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: 5em 0;
+    padding: 5em 0;
+}
+
+
+.like__head {}
+
+.like__body {
+    display: flex;
+    gap: 5em;
+}
+.like__body p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    padding-bottom: .5em;
+}
+.like__body-slider {
+    border-radius: 2em;
+}
+.like__body-slider img{
+    border-radius: 1em;
+}
+
+
+
+
+
+
+
+/* MUSIC */
+/* MUSIC */
+/* MUSIC */
+
+.music {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin-bottom: 5em;
+}
+
+
+.muaic__head {}
+
+.music__body {
+    display: flex;
+    gap: 5em;
+}
+.music__body p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    padding-bottom: .5em;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+
+
+
+
