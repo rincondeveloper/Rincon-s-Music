@@ -56,7 +56,7 @@ hr { margin: 1em 0;}
 
 
 .cover__image {
-    background-image: url('/img-albums/thevelvetunderground.jpg');
+    background-image: url('../../index/img-albums/thevelvetunderground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -204,7 +204,7 @@ hr { margin: 1em 0;}
 
 
 .review__songs {
-    background-image: url('/img-bands/thevelvetunderground.jpg');
+    background-image: url('../../img-bands/thevelvetunderground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
