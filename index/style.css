@@ -83,7 +83,7 @@ hr {
 /* HERO */
 /* HERO */
 .hero {
-    background-image: url('/index/main-img/tomyorke.jpg');
+    background-image: url('./main-img/tomyorke.jpg');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
