@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+
+    /* scrollbar-color: #ff0000 #000000; */
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+ul { list-style: none; }
+li { padding: .5em .5em .5em 0; }
+hr { margin: 1em 0;}
+
+.header {
+    display: flex;
+    padding: 2em 0;
+    align-items: center;
+}
+.flecha {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 7em;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+.flecha i {
+    font-size: 5em;
+    color: rgb(240, 240, 240);
+    transition: all 1s ease;
+}
+.flecha:hover i{
+    color: var(--hover-color)
+}
+
+
+
+
+
+.cover {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 5em;
+    margin: 3em 0 5em;
+    width: 100%;
+}
+
+
+.cover__image {
+    background-image: url('../../index/img-albums/theriseandfalloftheziggystardustandthespidersfrommars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45em;
+    width: 49em;
+    border-radius: 1em;
+
+    transition: all 1s ease-in-out;
+}
+.cover__image img {
+    height: 45em;
+}
+.button {
+    display: none;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    border-style: none;
+    margin: 23em;
+    background-color: #fff;
+
+    transition: all .5s ease-in-out;
+}
+
+
+.cover__image:hover {
+    filter: brightness(80%);
+}
+.cover__image:hover .button{
+    display: block;
+    cursor: pointer;
+    background-color: var(--hover-color);
+    filter: brightness(150%);
+}
+
+.button i {
+    font-size: 2.7em;
+    text-align: center;
+    margin: .1em 0 0 .1em;
+    color: var(--hover-color);
+
+    transition: all 1s ease-in-out;
+}
+
+
+
+.datos {
+    width: 50%;
+    padding-left: 1em;
+}
+.datos__name {
+    margin-bottom: 1.5em;
+}
+.datos__name a {
+    font-size: 2.8em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.datos__score {
+    margin-bottom: 1em;
+}
+.datos__score .star {
+    font-size: 2.1em;
+    color: var(--hover-color)
+}
+.datos__score span {
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.item__datos {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-bottom: 2em;
+}
+.item__datos p, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+                            
+
+
+.datos__songs {
+    margin: auto 0;
+    height: 65%;
+    display: flex;
+    gap: 7em
+}
+.datos__songs ul {
+    list-style: none;
+}
+.datos__songs li {
+    padding: .5em .5em .5em 0;
+}
+.datos__songs i {
+    margin-right: .5em;
+    cursor: pointer;
+}
+.datos__songs i:hover {
+    color: var(--hover-color);
+}
+.datos__songs a {
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+.review {
+    display: flex;
+    width: 100%;
+    gap: 5em;
+    height: 70vh;
+    margin: 0 0 5em;
+}
+
+
+.review__albums {
+    width: 50%;
+}
+.body__review p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    padding-bottom: .5em;
+}
+
+.head__review h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+
+
+
+
+.review__songs {
+    background-image: url('../../index/main-img/davidbowie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 45em;
+    width: 45em;
+    border-radius: 1em;
+}
+
